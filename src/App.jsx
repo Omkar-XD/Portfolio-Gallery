@@ -7,7 +7,7 @@ import Freelance from "./components/FreeLance";
 
 import LandingPages from "./components/LandingPages";
 
-import ML_Projects from "./components/ML_Projects";
+import ML_Projects from "./components/Ml_projects";
 
 import Full_Stack from "./components/Full_Stack";
 
