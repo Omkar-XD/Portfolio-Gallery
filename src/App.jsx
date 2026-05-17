@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // COMPONENTS
 import Sidebar from "./components/Sidebar";
 
-import Freelance from "./components/Freelance";
+import Freelance from "./components/FreeLance";
 
 import LandingPages from "./components/LandingPages";
 
