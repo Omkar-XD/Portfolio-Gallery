@@ -217,15 +217,21 @@ const Sidebar = ({
             </div>
 
             {!isMinimized && (
-              <a
-                href="https://omkarportfoliov2.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-3 overflow-hidden text-base font-medium"
-              >
-                Back to portfolio
-              </a>
-            )}
+  <a
+    href="https://omkarportfoliov2.netlify.app/"
+    className="
+      ml-3
+      overflow-hidden
+      text-base
+      font-medium
+      transition-all
+      duration-300
+      hover:text-purple-400
+    "
+  >
+    Back to Portfolio
+  </a>
+)}
           </li>
         </ul>
 
