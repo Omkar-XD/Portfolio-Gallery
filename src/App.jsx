@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 
-// COMPONENTS
 import Sidebar from "./components/Sidebar";
 import Freelance from "./components/Freelance";
 import LandingPages from "./components/LandingPages";
-import ML_Projects from "./components/ML_projects";
+import ML_Projects from "./components/ML_Projects";
 import Full_Stack from "./components/Full_Stack";
-
-// NEW COMPONENTS
-import Python from "./components/python";
-import Socket from "./components/socketio";
-
+import Python from "./components/Python";
+import Socketio from "./components/Socketio";
 const App = () => {
 
   // DEFAULT ACTIVE SECTION
