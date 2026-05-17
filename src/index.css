@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #333;
+  }
+
+  .BGblur {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+  
+  .BGblurMenu {
+    color: #fff;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+
+  .BGblurMenu:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+
+
+  .BGblur2 {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.438);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+
+  .BgGradient {
+    background: linear-gradient(45deg, #5271FF, #7252ff, #dc52ff);
+    transition: all .3s;
+  }
+
+  .BgGradient:hover {
+    background: linear-gradient(45deg, #dc52ff, #7252ff, #5271FF );
+    transition: all .3s;
+  }
+
+
+  .gradient-text {
+    font-weight: bold;
+    background: linear-gradient(45deg, #5271FF, #7252ff, #dc52ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradient-hover {
+    font-weight: bold;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradient-hover:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #5271FF, #7252ff, #dc52ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
