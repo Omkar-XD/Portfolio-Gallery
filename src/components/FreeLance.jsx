@@ -24,7 +24,7 @@ const projects = [
 
   {
     id: 2,
-    title: "Risen Shine Coaching",
+    title: "Rise N Shine Coaching",
     imageUrl: risenshine,
 
     // LIVE WEBSITE
