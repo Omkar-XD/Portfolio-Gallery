@@ -1,19 +1,29 @@
 import React, { useState } from "react";
 
+// COMPONENTS
 import Sidebar from "./components/Sidebar";
+
 import Freelance from "./components/Freelance";
+
 import LandingPages from "./components/LandingPages";
+
 import ML_Projects from "./components/ML_Projects";
+
 import Full_Stack from "./components/Full_Stack";
+
 import Python from "./components/Python";
+
 import Socketio from "./components/Socketio";
+
 const App = () => {
 
-  // DEFAULT ACTIVE SECTION
-  const [activeComponent, setActiveComponent] = useState("Freelance");
+  // ACTIVE SECTION
+  const [activeComponent, setActiveComponent] =
+    useState("Freelance");
 
   // SIDEBAR STATE
-  const [isMinimized, setIsMinimized] = useState(false);
+  const [isMinimized, setIsMinimized] =
+    useState(false);
 
   // RENDER COMPONENTS
   const renderComponent = () => {
@@ -32,13 +42,11 @@ const App = () => {
       case "Full_Stack":
         return <Full_Stack />;
 
-      // NEW
       case "Python":
         return <Python />;
 
-      // NEW
       case "Socket.io":
-        return <Socket />;
+        return <Socketio />;
 
       default:
         return <Freelance />;
@@ -51,7 +59,9 @@ const App = () => {
       {/* SIDEBAR */}
       <Sidebar
         setActiveComponent={setActiveComponent}
-        toggleSidebar={() => setIsMinimized(!isMinimized)}
+        toggleSidebar={() =>
+          setIsMinimized(!isMinimized)
+        }
         isMinimized={isMinimized}
         activeComponent={activeComponent}
       />
@@ -65,13 +75,16 @@ const App = () => {
           to-[#0f1b67]
           transition-all
           duration-300
-          ${isMinimized ? "lg:ml-20" : "lg:ml-64"}
+          ${isMinimized
+            ? "lg:ml-20"
+            : "lg:ml-64"}
           p-4
           min-h-screen
         `}
       >
         {renderComponent()}
       </main>
+
     </div>
   );
 };
